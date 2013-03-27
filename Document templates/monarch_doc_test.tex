@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% MOnarCH document template example
+% (Joao Sequeira, 2013)
+%
+% \documentclass command MOnarCH specific options
+%	chapters - use this if the document is to have chapters
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{monarch_doc}				%%% without the chapters option
+%\documentclass[chapters]{monarch_doc}		%%% with the chapters option
+
+% these are just examples of common packages
+\usepackage{makeidx}
+\usepackage{graphicx}        
+\usepackage[english]{babel}
+
+				
+\makeindex
+
+\begin{document}
+
+% here goes the title of the document
+%
+\title{Generic document template testing}
+
+% this is the version of the  document
+%
+\version{a}
+
+% this is for the author(s) of the document
+% use , to separate the authors in the same line
+% in case you need multiple lines use a tabular environment inside the \author
+\author{Joao Sequeira, others}
+
+% this is the date of the document
+\date{March 2013}
+
+\maketitle
+
+\tableofcontents
+
+% uncomment the following line if the chapters option is used in the \documentclass command	
+%\chapter{Example 1}
+
+\section{Introduction}
+
+This section introduces the document.
+
+\newpage
+
+The deliverable continues here with a nonsense text sample.
+
+\newpage
+
+lskdnfksadnlskdflgsdfgs fgsfg sdfg sdfg sdfgs f
+
+sdfgsdf sdfgs fgs dfgsd f sfgsf g  g sgsf g
+
+sgsfgsd gs dfgs fgsfdgsdfgsdfgsdfg sg ssfgs f sg a dfa sdf a
+
+
+agasdg a g ga sdg ags ga sga g as ga sg
+
+% uncomment the following line if the chapters option is used in the \documentclass command	
+%\chapter{Example 2}
+
+Nothing to say in this example. Let's just cite some authors to check the biblio,
+\cite{Bertsekas:1999, Astrom.Wittenmark:1984,Sadowska.et.al:2011}
+
+\section{Conclusions}
+
+This concludes the document.
+
+
+% here goes the bibliography (eventually the style may differ from "plain")
+\bibliographystyle{plain}
+\bibliography{deliverable_biblio}
+\printindex
+
+\end{document}
